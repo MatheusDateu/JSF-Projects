@@ -9,6 +9,7 @@
    <f:view>
       <head>
          <title>A Simple JavaServer Faces Application</title>
+         <link href="main.css" rel="stylesheet" type="text/css"/>
       </head>
       <body>
       <h:outputLabel value="#{cmsBean.name}"/>
@@ -20,18 +21,18 @@
             <tr>
                <td>Name:</td>
                <td>
-                  <h:inputText value="#{user.uName}"/>
+                  <h:inputText class="inputs" value="#{user.uName}"/>
                </td>
             </tr>
             <tr>
                <td>Password:</td>
                <td>
-                  <h:inputSecret value="#{user.uPassword}"/>
+                  <h:inputSecret class="inputs" value="#{user.uPassword}"/>
                </td>
             </tr>
          </table>
          <p>
-            <h:commandButton value="Login" action="login"/>
+            <h:commandButton class="buttons" value="Login" action="login"/>
          </p>
       </h:form>
       </body>
